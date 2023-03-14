@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-IMDb REST API/Pods-IMDb REST API-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C04BACA2AF895D084CB46F /* Pods_IMDb_REST_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43792AA253A84C492CA4F2AB /* Pods_IMDb_REST_API.framework */; };
+		D2AB536929BFA2A900296E9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB536829BFA2A900296E9E /* AppDelegate.swift */; };
+		D2AB536B29BFA2A900296E9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB536A29BFA2A900296E9E /* SceneDelegate.swift */; };
+		D2AB536D29BFA2A900296E9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB536C29BFA2A900296E9E /* ViewController.swift */; };
+		D2AB537229BFA2AA00296E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AB537129BFA2AA00296E9E /* Assets.xcassets */; };
+		D2AB537529BFA2AA00296E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AB537329BFA2AA00296E9E /* LaunchScreen.storyboard */; };
+		D2AB537F29BFA43C00296E9E /* CellWithHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB537E29BFA43C00296E9E /* CellWithHeader.swift */; };
+		D2AB538129BFA46F00296E9E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB538029BFA46F00296E9E /* SearchResponse.swift */; };
+		D2AB538329BFA47A00296E9E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB538229BFA47A00296E9E /* Constants.swift */; };
+		D2AB538529BFA48B00296E9E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB538429BFA48B00296E9E /* NetworkService.swift */; };
+		D2AB538729BFA49B00296E9E /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB538629BFA49B00296E9E /* NetworkDataFetcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		43792AA253A84C492CA4F2AB /* Pods_IMDb_REST_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMDb_REST_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EFCE0E3F0A6036917C3E5C /* Pods-IMDb REST API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDb REST API.release.xcconfig"; path = "Target Support Files/Pods-IMDb REST API/Pods-IMDb REST API.release.xcconfig"; sourceTree = "<group>"; };
+		8831D2541E5EA5D872E030E6 /* Pods-IMDb REST API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMDb REST API.debug.xcconfig"; path = "Target Support Files/Pods-IMDb REST API/Pods-IMDb REST API.debug.xcconfig"; sourceTree = "<group>"; };
+		D2AB536529BFA2A900296E9E /* IMDb REST API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMDb REST API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AB536829BFA2A900296E9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2AB536A29BFA2A900296E9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2AB536C29BFA2A900296E9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2AB537129BFA2AA00296E9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2AB537429BFA2AA00296E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2AB537629BFA2AA00296E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2AB537E29BFA43C00296E9E /* CellWithHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithHeader.swift; sourceTree = "<group>"; };
+		D2AB538029BFA46F00296E9E /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		D2AB538229BFA47A00296E9E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D2AB538429BFA48B00296E9E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D2AB538629BFA49B00296E9E /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AB536229BFA2A900296E9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C04BACA2AF895D084CB46F /* Pods_IMDb_REST_API.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EE11C6A7D42292F78F82EFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43792AA253A84C492CA4F2AB /* Pods_IMDb_REST_API.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9D5198117AB84A6CC2EDAC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8831D2541E5EA5D872E030E6 /* Pods-IMDb REST API.debug.xcconfig */,
+				43EFCE0E3F0A6036917C3E5C /* Pods-IMDb REST API.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D2AB535C29BFA2A900296E9E = {
+			isa = PBXGroup;
+			children = (
+				D2AB536729BFA2A900296E9E /* IMDb REST API */,
+				D2AB536629BFA2A900296E9E /* Products */,
+				C9D5198117AB84A6CC2EDAC3 /* Pods */,
+				7EE11C6A7D42292F78F82EFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2AB536629BFA2A900296E9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB536529BFA2A900296E9E /* IMDb REST API.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2AB536729BFA2A900296E9E /* IMDb REST API */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB536829BFA2A900296E9E /* AppDelegate.swift */,
+				D2AB536A29BFA2A900296E9E /* SceneDelegate.swift */,
+				D2AB536C29BFA2A900296E9E /* ViewController.swift */,
+				D2AB537E29BFA43C00296E9E /* CellWithHeader.swift */,
+				D2AB538229BFA47A00296E9E /* Constants.swift */,
+				D2AB538929BFA58200296E9E /* Models */,
+				D2AB538829BFA56B00296E9E /* Network */,
+				D2AB537129BFA2AA00296E9E /* Assets.xcassets */,
+				D2AB537329BFA2AA00296E9E /* LaunchScreen.storyboard */,
+				D2AB537629BFA2AA00296E9E /* Info.plist */,
+			);
+			path = "IMDb REST API";
+			sourceTree = "<group>";
+		};
+		D2AB538829BFA56B00296E9E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB538429BFA48B00296E9E /* NetworkService.swift */,
+				D2AB538629BFA49B00296E9E /* NetworkDataFetcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D2AB538929BFA58200296E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB538029BFA46F00296E9E /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2AB536429BFA2A900296E9E /* IMDb REST API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2AB537929BFA2AA00296E9E /* Build configuration list for PBXNativeTarget "IMDb REST API" */;
+			buildPhases = (
+				E3294705BCD8AAC1827E4915 /* [CP] Check Pods Manifest.lock */,
+				D2AB536129BFA2A900296E9E /* Sources */,
+				D2AB536229BFA2A900296E9E /* Frameworks */,
+				D2AB536329BFA2A900296E9E /* Resources */,
+				141C3F468C610143277CA8FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IMDb REST API";
+			productName = "IMDb REST API";
+			productReference = D2AB536529BFA2A900296E9E /* IMDb REST API.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2AB535D29BFA2A900296E9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D2AB536429BFA2A900296E9E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D2AB536029BFA2A900296E9E /* Build configuration list for PBXProject "IMDb REST API" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2AB535C29BFA2A900296E9E;
+			productRefGroup = D2AB536629BFA2A900296E9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AB536429BFA2A900296E9E /* IMDb REST API */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2AB536329BFA2A900296E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AB537529BFA2AA00296E9E /* LaunchScreen.storyboard in Resources */,
+				D2AB537229BFA2AA00296E9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		141C3F468C610143277CA8FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMDb REST API/Pods-IMDb REST API-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IMDb REST API/Pods-IMDb REST API-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IMDb REST API/Pods-IMDb REST API-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3294705BCD8AAC1827E4915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IMDb REST API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AB536129BFA2A900296E9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2AB538729BFA49B00296E9E /* NetworkDataFetcher.swift in Sources */,
+				D2AB537F29BFA43C00296E9E /* CellWithHeader.swift in Sources */,
+				D2AB538129BFA46F00296E9E /* SearchResponse.swift in Sources */,
+				D2AB536D29BFA2A900296E9E /* ViewController.swift in Sources */,
+				D2AB536929BFA2A900296E9E /* AppDelegate.swift in Sources */,
+				D2AB536B29BFA2A900296E9E /* SceneDelegate.swift in Sources */,
+				D2AB538329BFA47A00296E9E /* Constants.swift in Sources */,
+				D2AB538529BFA48B00296E9E /* NetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2AB537329BFA2AA00296E9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2AB537429BFA2AA00296E9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2AB537729BFA2AA00296E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2AB537829BFA2AA00296E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2AB537A29BFA2AA00296E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8831D2541E5EA5D872E030E6 /* Pods-IMDb REST API.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IMDb REST API/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Penkov.IMDb-REST-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2AB537B29BFA2AA00296E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43EFCE0E3F0A6036917C3E5C /* Pods-IMDb REST API.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IMDb REST API/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Penkov.IMDb-REST-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2AB536029BFA2A900296E9E /* Build configuration list for PBXProject "IMDb REST API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AB537729BFA2AA00296E9E /* Debug */,
+				D2AB537829BFA2AA00296E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2AB537929BFA2AA00296E9E /* Build configuration list for PBXNativeTarget "IMDb REST API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2AB537A29BFA2AA00296E9E /* Debug */,
+				D2AB537B29BFA2AA00296E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2AB535D29BFA2A900296E9E /* Project object */;
+}
